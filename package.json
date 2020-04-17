@@ -1,0 +1,47 @@
+{
+	"name": "phone-number-timezone",
+	"version": "1.0.0",
+	"description": "Returns IANA timezones of phone numbers. (Node.js-only.)",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/cyph/phone-number-timezone.git"
+	},
+	"author": "Cyph, Inc. <phone-number-timezone@cyph.com> (https://github.com/cyph)",
+	"license": "BSD",
+	"bugs": {
+		"url": "https://github.com/cyph/phone-number-timezone/issues"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npx cyph-pretty-quick --staged"
+		}
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": false,
+		"endOfLine": "lf",
+		"htmlWhitespaceSensitivity": "css",
+		"jsxBracketSameLine": false,
+		"jsxSingleQuote": false,
+		"printWidth": 80,
+		"proseWrap": "always",
+		"quoteProps": "consistent",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	},
+	"devDependencies": {
+		"@cyph/prettier": "*",
+		"@cyph/pretty-quick": "*",
+		"husky": "*"
+	},
+	"dependencies": {
+		"libphonenumber-geo-carrier": "^1",
+		"libphonenumber-js": "^1",
+		"phone-number-to-timezone": "^1"
+	}
+}
